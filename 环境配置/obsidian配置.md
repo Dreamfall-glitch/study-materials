@@ -6,4 +6,4 @@
 
 ## 云同步
 
-1. 网站登录`github`
+1. 网站登录`github`，新建`repository`，（*git push*相关的目录）
