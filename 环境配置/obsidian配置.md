@@ -7,3 +7,7 @@
 ## 云同步
 
 1. 网站登录`github`，新建`repository`，（*git push*相关的目录）
+
+   > `git bash` 梯子用不了就用 `github desktop` 手动上传
+
+2. `obsidian` 打开目标文件夹，
