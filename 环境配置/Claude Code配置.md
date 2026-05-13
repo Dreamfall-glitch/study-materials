@@ -238,11 +238,9 @@ claude --version
 
 **步骤1：**在IDE终端打开CC，输入：
 
-```Plain
+```powershell
 claude
 ```
-
-  
 
 **步骤2：**根据个人喜好设置皮肤与主题，然后一路 `yes` 后，进入CC主界面：
 
@@ -429,22 +427,15 @@ claude --dangerously-skip-permissions
     
 2. **skill合集网站：****[lobehub](https://lobehub.com/zh/skills)**
    
-    1. 大家既可以根据分类去寻找自己需要的skill，也可以直接在精选合集查看推荐的优质skill
-       
-    
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MWU1YmNhMjNjMGNhZjM0ZjRlNzAyNDExZmNjMzdiOWZfbEt3MlByclU5RUJUM1pxNGdicG1kWHZhVWNtbVR6TTVfVG9rZW46T01wMmJZTGFub1I3WkJ4MWZiVmNYV01TbnI4XzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
+    大家既可以根据分类去寻找自己需要的skill，也可以直接在精选合集查看推荐的优质skill
     
 3. **想创建自己的skill？**
    
-    1. 我们还有一份网页版教学文档，非常详细：[Agent Skills指南（Claude Code版）](https://ccnk05wgo092.aiforce.cloud/spark/faas/app_4jdqh6vm3jpdp)
+    我们还有一份网页版教学文档，非常详细：[Agent Skills指南（Claude Code版）](https://ccnk05wgo092.aiforce.cloud/spark/faas/app_4jdqh6vm3jpdp)
     
 4. **下载了skill怎么装？**
    
-    1. 可根据需求，将skill文件放入**项目级skill**与**全局级skill**的存放**文件夹**
-       
-    
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDE3Mjk1YjlkNzc2NjlkYjYyNzA4N2NlMzRjZDc0ZDdfMUI1ZmJOWGQwc1RxVG9hdUhJbGI5Q05ROTlmZDlGdG1fVG9rZW46T2U1TGJGWU12b0htTGl4dHJySGNhVUloblBlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
+    可根据需求，将skill文件放入**项目级skill**与**全局级skill**的存放**文件夹**
 
   
 
@@ -457,8 +448,6 @@ claude --dangerously-skip-permissions
 📺 **视频教程：**[用神器Claude Code！打造贴身AI秘书团【小白教程】](https://www.bilibili.com/video/BV1zqeMzfEiQ/?spm_id_from=333.1387.upload.video_card.click&vd_source=b82dea39967bb9f5eb44be501b4cae31)
 
 📄 **文档教程：**[Claude Code教程](https://my.feishu.cn/wiki/BxLTwlkvkiQhJkkJ7vgc95aZnMe)
-
-  
 
 ## 3. CLI 命令行工具
 
@@ -473,8 +462,6 @@ claude --dangerously-skip-permissions
 
 > 给大家推荐一个GitHub上的CLI主题推荐网页，大家可按需查找自己想要的CLI：[Command-line interface](https://github.com/topics/cli)
 
-  
-
 ## 4. 子Agent（SubAgent）
 
 **创建子Agent的两种方式：**
@@ -483,52 +470,32 @@ claude --dangerously-skip-permissions
    
 2. **手动创建：**通过指令 `/agents` ，在Library界面进行创建
    
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NGVjOGNkOGU3ZDVkNmE5NGMyMTI0YzAzNTI0NDY2OGZfaWtoN2ZMd1d6eFdpeGZob09MTjVYN2ttMlhUWTFxYWhfVG9rZW46SnF3RWJXeDFQbzZKQmR4d3d5UmNwbHExbjRlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
 
 **手动创建步骤：**
 
 **步骤1：**选择创建项目级或全局级子Agent
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MDY1ZDRiYmE3NDY3NTQyYzE3MmMxNzkxZGRlNDdkZjFfOU02RTZMM3RHVjlOcHVVQXZkMDdPMVgzU3Iydnl1RWRfVG9rZW46UWE2emJXbEZFb24wUFZ4c1dpamNUcVMxbnloXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
 **步骤2：**选择「AI辅助创建」，让AI根据意图辅助创建
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=YTlkNGQzYjQ2Mjk5OThjOGJmNGU0Nzc4ZjljYmM1ODdfMjgxU2FCVHhiN0VaZTlDdDZqbmc5U2JNbUJOTXE3NVhfVG9rZW46RzZUa2JROFNqbzJjRUF4bGswTmNsN0JtbkpnXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
 **步骤3：**描述想要的子Agent功能
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NTIzMjk0NzM0NzdiMzRhYmMwOGNkYjY2NTI5ZDA3N2NfNlE5aXlJOEg0akw5aDlUSXRBb0Z5WXp5Rk8zZkt2c1BfVG9rZW46VVdVRGJTMmg4b3lLWXF4b2NtbmNQZ3ZKbk5LXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
 **步骤4：**决定子Agent工具权限（✓为选中）
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NDJlMzQyNTBkZWRmZTVkMzNkNTRiZjllZTY3YjcwN2JfRU9IaEd2SWRvcUlFNUhRQmFnSnFaYkw4WURxVTlVc25fVG9rZW46STNQQmJ4b3h3bzdNZ0l4eHZkdWNFbjFybnpoXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
 **步骤5：**选择Claude的模型
 
 - 一般选Sonnet就可以（如果使用CC Switch配置了模型，选哪个都一样）
   
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ODcyMTQ5YWEyMGNjODZmM2EyMmU3MTliNzcyNGRhYzJfMWl4VnZGU1ZRQnNSWVltUXBzOHBpbDRERk9CTkxzME1fVG9rZW46RWduY2IxeHZ1b0NNOGF4R1NwemNBbGtZbmJoXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
 
 **步骤6：**为子Agent挑选区别于主Agent的颜色
 
 - 选个好看的颜色
   
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MTczNTQyNTFmODEwNTZjNjE1MmQ4OGIwY2EzMGIzYmNfOUtMTDdXQ2drNVpOazRhRWlIdFlBSnFoWnNQUWJmbjRfVG9rZW46VlJTS2JtcFJpbzJwS2Z4Mnk2QWN3SHNHbk1iXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
 
 **步骤7:**调用与管理子Agent
 
 - 输入 `/agents`，在Library下选择已创建的项目级子Agent
   
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=M2E0ZWU0YWVkMjRjZjU2OGU1MGRlMDAxNWY5MDAwNTlfV1FqZnBwRFJ0Um5TM0FqUEhWNEptc05DV3dodjE4QnJfVG9rZW46T0dZYWI4WlNXbzQybUF4NEUycmMwQ1NmbndjXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
 - 根据需求对子Agent进行相应操作
-  
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTJjY2ZjNGU1Mzk2MjJhN2NjNGJiNDgxNmJkYmY4YjRfbHRNVVcxaTFWdVNVN0RzR1hxbHJmRTNrT0c1M0JBczhfVG9rZW46VXA3TGJweUlVb01GMWd4cVNNSmMxMTRGbmhmXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
-
   
 
 ## 5. Hook 钩子
@@ -543,8 +510,6 @@ claude --dangerously-skip-permissions
 设置一个hook，每次提交代码之前，都会自动触发代码格式的检查
 ```
 
-  
-
 ## 6. 插件（Plugin）
 
 **插件说明**
@@ -553,13 +518,7 @@ claude --dangerously-skip-permissions
 
 **步骤1：**通过指令 `/plugin` 进入插件管理界面
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGZlYjNmMmM2MGVmN2Y0Mzg5OTFmOGVmNDYzNzcxYzlfSWpka2g4Nms0REN1YlhHYjNoWUh6VHk4OHdVd05oaEhfVG9rZW46UjlNaGJvWUhUb2hXd3p4Y2lydGNxbVUzbkVkXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
 **步骤2：**在插件管理界面，可以收录下载钟意的插件，或管理已下载插件
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NmYwNGU5NjY5NzJkNWZmNzFmYTViYTcxMjFiZjM1OTZfTmkyV28yeTFvWHBJcXoya2tndFU1NTluaEJvSGlDTmZfVG9rZW46U1BaZWJnRlVYbzhYTnF4QTFmQ2NFN3NXbkJjXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NjljYjRmZDZmYzU5MzA1ODBhOWQyODUwYTU1M2RiOTFfR1VKUlBxTDFJM0lIOHYwaTMwSFBzS094cWVpRUpKUVBfVG9rZW46RXZaZ2JncjRrb3NzSzV4amU3Y2NweXRmbndiXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
-  
 
 推荐给大家一些Claude Code官方精选的一些插件：
 
