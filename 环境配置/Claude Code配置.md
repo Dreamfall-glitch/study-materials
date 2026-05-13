@@ -266,11 +266,12 @@ claude --dangerously-skip-permissions
 2. CC在Accept Edits模式下，执行终端命令时，下图三个选项的含义依次分别是：
    
     1. **仅同意这一次**的命令执行
-       
+    
     2. **同意**，且该项目之后执行项目依赖安装时，不再询问
-       
+    
     3. **不同意**，再商量
     
+    ![](assets/Claude%20Code配置/file-20260513155555667.png)
 
 ## 5. 如何提供文件给CC
 
