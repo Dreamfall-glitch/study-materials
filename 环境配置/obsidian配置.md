@@ -1,4 +1,4 @@
-# obsidian配置
+# 从零开始搭建
 
 ## 下载obsidian
 
@@ -10,4 +10,4 @@
 
    > `git bash` 梯子用不了就用 `github desktop` 手动上传
 
-2. 用 `obsidian` 打开目标文件夹，
+2. 用 `obsidian` 打开目标文件夹，首页创建 `.gitignore`，写上
