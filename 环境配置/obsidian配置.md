@@ -2,7 +2,7 @@
 
 ## 下载obsidian
 
-官网下载，开梯子下的更快
+[Obsidian - Sharpen your thinking](https://obsidian.md/)官网下载，开梯子下的更快
 
 ## 云同步
 
@@ -10,4 +10,4 @@
 
    > `git bash` 梯子用不了就用 `github desktop` 手动上传
 
-2. `obsidian` 打开目标文件夹，
+2. 用 `obsidian` 打开目标文件夹，
