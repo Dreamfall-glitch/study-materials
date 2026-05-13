@@ -228,8 +228,9 @@ claude --version
 
 **步骤3：**以 **DeepSeek** 为例，选择对应厂商（中国版），然后填写API Key并配置模型：
 ![](assets/Claude%20Code配置/file-20260513145427547.png)
-可进行模型测试
-![](assets/Claude%20Code配置/file-20260513145513665.png)
+可进行模型测试，会提示**运行正常**
+![697](assets/Claude%20Code配置/file-20260513145513665.png)
+可进行
 
 **步骤4：**选择「启用」设置好的API，CC的大模型配置完成！下一步可以准备打开Claude Code了：
 
