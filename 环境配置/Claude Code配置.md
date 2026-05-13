@@ -399,7 +399,7 @@ claude --dangerously-skip-permissions
 
 ## 3. 写提示词
 
-参考
+参考 [如何写提示词](如何写提示词.md) 的内容
 
 # 四、能力扩展
 
