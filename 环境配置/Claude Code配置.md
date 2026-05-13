@@ -438,11 +438,13 @@ claude --dangerously-skip-permissions
     skill文件结构
     
     ```
-    xxx-skill/
-    ├── SKILL.md 
-    ├── scripts/
-    ├── references/
-    └── assets/
+	.claude
+	└──skills
+		└──xxx-skill/
+		    ├── SKILL.md 
+		    ├── scripts/
+		    ├── references/
+		    └── assets/
     ```
 
 ## 2. MCP 扩展
