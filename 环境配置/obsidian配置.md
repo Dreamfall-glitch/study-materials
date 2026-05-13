@@ -1,6 +1,6 @@
 # 从零开始搭建
 
-## 下载obsidian
+## 下载 Obsidian
 
 [Obsidian - Sharpen your thinking](https://obsidian.md/)官网下载，开梯子下的更快
 
