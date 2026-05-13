@@ -308,10 +308,10 @@ claude --dangerously-skip-permissions
 |`/btw`|**By the way缩写，可以暂时切出正在执行的项目，隔离上下文，方便使用者与CC进行临时对话。会话完毕后，可按Esc消除临时会话**|
 |`/simplify`|**输入后会派生出3个agent，从代码质量、运行效率和复用性三个角度做一次代码审核，然后自动优化修改**|
 |`/rewind`|**进入回滚界面**|
-|`/compact`|主动压缩精简上下文|
+|`/compact`|**主动压缩精简上下文**|
 |`/clear`|彻底清空上下文，相当于重开一个会话|
-|`/context`|详细展示agent当前的上下文信息，诸如：上下文占比，上下文类别等等|
-|`/resume`|在全新的上下文窗口，选择恢复到之前的对话|
+|`/context`|**详细展示agent当前的上下文信息，诸如：上下文占比，上下文类别等等**|
+|`/resume`|**在全新的上下文窗口，选择恢复到之前的对话**|
 |`/init`|初始化创建项目级Claude.md|
 |`/memory`|针对Claude的全局、项目记忆，以及auto memory进行操作和管理|
 |`/agents`|创建、调用、管理子agent|
@@ -321,13 +321,13 @@ claude --dangerously-skip-permissions
 
 ## 1. Git下载与设置
 
-## 2.上下文管理
+## 2.上下文管理（清除大模型空间）
 
 **步骤1:**确认上下文进度
 
 - 输入`/context`命令，它会详细的展示我们的上下文占比信息：
   
-    ```Plain
+    ```powershell
     /context
     ```
     
@@ -339,13 +339,13 @@ claude --dangerously-skip-permissions
 - 我的习惯是看到高于60%了，就大概率需要 `/compact`
   
 
-```Plain
+```powershell
 /compact
 ```
 
 **步骤3:**彻底清空上下文
 
-```Plain
+```powershell
 /clear
 ```
 
@@ -353,7 +353,7 @@ claude --dangerously-skip-permissions
 
 - 对CC输入提示词，并根据CC引导完成后重启终端即可：
   
-    ```Plain
+    ```
     帮我配一个 statusLine,显示当前目录+模型+上下文剩余百分比 
     ```
     
@@ -362,10 +362,18 @@ claude --dangerously-skip-permissions
 
 - 输入以下指令后，选择恢复到你想要的会话即可：
   
-    ```Plain
+    ```powershell
     /resume
     ```
     
+
+- 恢复上次对话
+
+  ```powershell
+  claude -c
+  ```
+
+  -c 即 -continue
 
 # 三、个性化
 
