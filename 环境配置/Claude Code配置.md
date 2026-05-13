@@ -448,12 +448,12 @@ claude --dangerously-skip-permissions
 
 **推荐几个优质CLI，**直接将下载链接给CC，让CC全权负责下载和引导操作：
 
-|**CLI名称**|**功能**|**下载**|
-|---|---|---|
-|飞书CLI|飞书官方CLI工具，覆盖消息、文档、多维表格、电子表格、幻灯片、日历、邮箱、任务、会议等核心业务域，提供200+命令及24个AI Agent Skills|[GitHub](https://github.com/larksuite/cli/blob/main/README.zh.md)|
-|OpenCLI|万能命令行工具箱，通用命令行中心与AI原生运行平台，能将任何网站、桌面应用或本地程序变成统一命令行操作界面|[GitHub](https://github.com/jackwener/opencli)|
-|CLI|GitHub 的官方命令行工具。它将拉取请求、问题和其他 GitHub 概念带到终端中，与你已经在使用 `git` 和代码的地方并排显示。|[GitHub](https://github.com/cli/cli)|
-|gemini-CLI|Gemini CLI 可将 Gemini 的功能直接引入终端。它提供轻量级的 Gemini 访问方式，能够以最直接的方式从终端命令访问 Gemini 模型。|[GitHub](https://github.com/google-gemini/gemini-cli)|
+| **CLI名称**  | **功能**                                                                         | **下载**                                                            |
+| ---------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| 飞书CLI      | 飞书官方CLI工具，覆盖消息、文档、多维表格、电子表格、幻灯片、日历、邮箱、任务、会议等核心业务域，提供200+命令及24个AI Agent Skills  | [GitHub](https://github.com/larksuite/cli/blob/main/README.zh.md) |
+| OpenCLI    | 万能命令行工具箱，通用命令行中心与AI原生运行平台，能将任何网站、桌面应用或本地程序变成统一命令行操作界面                          | [GitHub](https://github.com/jackwener/opencli)                    |
+| CLI        | GitHub 的官方命令行工具。它将拉取请求、问题和其他 GitHub 概念带到终端中，与你已经在使用 `git` 和代码的地方并排显示。          | [GitHub](https://github.com/cli/cli)                              |
+| gemini-CLI | Gemini CLI 可将 Gemini 的功能直接引入终端。它提供轻量级的 Gemini 访问方式，能够以最直接的方式从终端命令访问 Gemini 模型。 | [GitHub](https://github.com/google-gemini/gemini-cli)             |
 
 > 给大家推荐一个GitHub上的CLI主题推荐网页，大家可按需查找自己想要的CLI：[Command-line interface](https://github.com/topics/cli)
 
