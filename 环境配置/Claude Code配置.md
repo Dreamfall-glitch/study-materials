@@ -390,7 +390,7 @@ claude --dangerously-skip-permissions
 
 **全局级 Claude.md** 有两种创建方式：
 
-- **方式 1：提示词交互：**记得永远说中文，写进全局claude.md
+- **方式 1：提示词交互：**xxx，写进全局claude.md
 - **方式 2：使用指令：**输入 `/memory` 后，选择「User Memory」进入
 
 ## 2. Auto Memory
