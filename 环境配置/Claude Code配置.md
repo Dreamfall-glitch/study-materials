@@ -413,9 +413,8 @@ claude --dangerously-skip-permissions
 
 1. **Claude Code优质skill推荐**
    
-    1. 可以将skill链接给cc，让cc帮你直接下好
+	可以将skill链接给cc，让cc帮你直接下好
        
-    
     |skill名称|功能|下载链接|
     |---|---|---|
     |Find-Skill|根据用户需求，查找和安装来自agent skill开放生态的技能|[GitHub](https://github.com/vercel-labs/skills/tree/main/skills/find-skills)|
