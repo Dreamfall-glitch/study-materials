@@ -2,23 +2,10 @@
 
 ## 1. 部署前准备
 
-首先需要下载和安装一个 **Agent IDE**（智能体集成开发环境）。
+首先需要下载和安装一个 **Agent IDE**（智能体集成开发环境）
 
-推荐使用以下免费IDE，无需购买会员，使用免费额度即可完成后续CC部署：
+这里就用 **VS Code** ，新建/打开个人项目文件夹
 
-| **Agent IDE**                    | **下载地址**                                    |
-| -------------------------------- | ------------------------------------------- |
-| Cursor                           | [官网下载](https://cursor.com/cn/download)      |
-| Google Anti-gravity              | [官网下载](https://antigravity.google/download) |
-| Trae                             | [官网下载（cn）](https://www.trae.cn/)            |
-| [官网下载（en）](https://www.trae.ai/) |                                             |
-
-
-以 **Cursor** 为例，下载进入后，可以构建如图的开发环境布局：
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NjM5ODVkZTRjYTk5MWRiMThiYjE4ZWY5NWUyMmFmNTdfZFFFV0ZDS1lWQ0I2bW5qTHdxZlJINHh1RFJXUmpUeFNfVG9rZW46U2J6cmJsYWhXb1NRYUl4bE9mS2NnZjJObjZjXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
-  
 
 ## 2. 安装Claude Code
 
@@ -30,144 +17,214 @@
 
 **步骤 1：**在ide终端用WinGet先安装Git，遇到选项直接输入`y`（yes）
 
-```Plain
+```cmd
 winget install Git.Git
 ```
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MzJmMmM3NWM3MTk4ZjcwNWRkMDUxMmY4YjBiMzBiZmVfODRJMnFmOUNtRU1HMkZ2QXp0TTE4YjhUV2FuSVdKY2dfVG9rZW46R1NwU2JGUGR3b05Mck14c1RoRmNvSEZqbndlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
 **步骤 2**：在ide终端输入代码，下载Claude code
 
 - **Windows - PowerShell（ide终端默认用这个）：**
-    
+  
 
-```Plain
+```powershell
 irm https://claude.ai/install.ps1 | iex
 ```
 
 - **Windows - CMD：**
-    
 
-```Plain
+```cmd
 curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
 ```
 
 - 下载好以后进行版本验证，**版本号正常显示，代表安装完成！**
-    
+  
 
-```Plain
+```cmd
 claude --version
 ```
 
-  
-
-#### **macOS：**
+#### **macOS、Linux：**
 
 - 直接在ide终端输入以下代码
-    
+  
 
-```Plain
+```bash
 curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-- 下载好以后进行版本验证，**版本号正常显示，代表安装完成！**
-    
-
-```Plain
-claude --version
-```
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjlhZGQ3MzI0Mzk1ZDgxNjYyY2MwNmQ2Zjc2NTc4OGVfQ3JoMmJEcTlsRUJndkp2d3N4SURaakd1M1RId0hDcEpfVG9rZW46S2VFNGJQSzlWb3l0czl4cEd4eGNadnVFbm5oXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
-### **方式 2：Agent原生安装（需魔法上网）**
-
-**步骤 1：**直接向IDE Agent输入提示词：
-
-```Plain
-帮我安装node并且用npm安装好最新的claude code
-```
-
-**步骤 2：**验证Claude code版本号，确认安装成功
-
-```Plain
-claude --version
-```
-
+- 下载好以后进行版本验证
   
 
-### **方式 3：无魔法安装Claude code**
+```bash
+claude --version
+```
+
+### **方式 2：无魔法安装Claude code**
 
 #### **Windows：**
 
 **步骤 1：**用WinGet先安装Git，遇到选项直接y（yes）
 
-```Plain
+```cmd
 winget install Git.Git
 ```
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MzViZTVjYWY4M2M3MTAzZGYxNTUwMWU3MDQ3OGQ3Y2ZfRXl2WjRoZ1pnMFBodXZuTzJNWXVXSTQ0YURiQ0ZYOElfVG9rZW46TExpV2J1OXJZb0ZtaFl4Z2h4Q2NDRnhsbmNoXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
 **步骤 2**：在ide agent输入以下提示词，让agent一条龙搞定Claude code安装
 
-```Plain
+```
 执行这条代码安装Claude code：winget install Anthropic.ClaudeCode
 安装完后，把Claude Code的可执行文件路径配置到系统环境变量的Path里。
 ```
 
+具体安装过程：
+
+```bash
+User: 执行这条代码安装Claude code：winget install Anthropic.ClaudeCode
+安装完后，把Claude Code的可执行文件路径配置到系统环境变量的Path里。
+
+GitHub Copilot: 我将先用 `winget` 安装 `Anthropic.ClaudeCode`，然后用 `Get-Command/where.exe` 找到实际的可执行文件位置，最后把该目录追加到系统级 `Path`（如果当前终端未提升权限，会提示并改为写入用户级 `Path` 作为替代）。
+
+Ran terminal command: winget install -e --id Anthropic.ClaudeCode
+
+安装命令看起来没回显信息；我将加上 `--accept-*` 参数重跑一次，并确保拿到安装结果输出。
+
+Ran terminal command: winget install -e --id Anthropic.ClaudeCode --accept-package-agreements --accept-source-agreements
+
+当前环境里 `winget` 命令不存在；我先确认系统是否装了“应用安装程序（App Installer）/ Microsoft.DesktopAppInstaller”，这是 `winget` 的来源，然后再决定下一步安装路径。
+
+Ran terminal command: Get-Command winget -ErrorAction SilentlyContinue | Format-List *; Get-AppxPackage -Name Microsoft.DesktopAppInstaller | Select-Object Name, Version, PackageFullName
+
+已确认 `winget.exe` 实际存在于 `WindowsApps` 目录；为避免“执行别名/Path”导致的识别问题，我将用完整路径调用 `winget.exe` 来安装 Claude Code。
+
+Ran terminal command: $winget = "$env:LOCALAPPDATA\Microsoft\WindowsApps\winget.exe"; & $winget install -e --id Anthropic.ClaudeCode --accept-package-agreements --accept-source-agreements
+
+Claude Code 看起来已安装完成；下一步我会定位它的 CLI 可执行文件（如 `claude.exe`）所在目录，然后把该目录追加进系统级 `Path`。
+
+Ran terminal command: Get-Command claude -ErrorAction SilentlyContinue | Format-List Name,CommandType,Source,Path; where.exe claude 2>$null; where.exe claude.exe 2>$null
+
+`claude` 命令当前没解析到；我将检查（1）`WindowsApps` 里的“执行别名”文件是否存在，以及（2）系统里的 MSIX 包安装信息（含 InstallLocation），从而确定需要加入 Path 的真实目录。
+
+Ran terminal command: $wa = "$env:LOCALAPPDATA\Microsoft\WindowsApps"; Get-ChildItem $wa -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'claude|anthropic' } | Select-Object Name, FullName | Format-Table -AutoSize; 
+Get-AppxPackage | Where-Object { $_.Name -match 'Claude|Anthropic' -or $_.PublisherDisplayName -match 'Anthropic' } | Select-Object Name, PublisherDisplayName, Version, InstallLocation | Format-List
+
+没有搜到明显的 AppX/MSIX 包信息；我接下来用 `winget show` 查看该包的安装器类型与可能的安装目录线索，然后再做精准的 Path 配置。
+
+Ran terminal command: $winget = "$env:LOCALAPPDATA\Microsoft\WindowsApps\winget.exe"; & $winget show -e --id Anthropic.ClaudeCode
+
+从 `winget show` 看这是 `portable` 安装器（直接下载 `claude.exe`）；接下来我会在 WinGet 的默认 `Packages/Links` 目录里定位 `claude.exe`，然后把它所在目录写入系统级 `Path`。
+
+Ran terminal command: $base = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet'; $candidates = @(
+  (Join-Path $base 'Links'),
+  (Join-Path $base 'Packages'),
+  (Join-Path $base 'PortableLinks'),
+  (Join-Path $base 'PortablePackages')
+);
+$candidates | ForEach-Object { if (Test-Path $_) { "-- $_"; Get-ChildItem -Path $_ -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '^claude(\.exe)?$' -or $_.Name -match 'claude' } | Select-Object FullName, Length, LastWriteTime | Sort-Object LastWriteTime -Descending | Select-Object -First 20 | Format-Table -AutoSize } }
+
+
+Ran terminal command: $targetDir = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Links';
+if (!(Test-Path $targetDir)) { throw "目标目录不存在: $targetDir" }
+
+$inMachine = ($([Environment]::GetEnvironmentVariable('Path','Machine') ?? '') -split ';') -contains $targetDir
+$inUser    = ($([Environment]::GetEnvironmentVariable('Path','User') ?? '') -split ';') -contains $targetDir
+
+$isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+"TargetDir: $targetDir"; "IsAdmin: $isAdmin"; "InMachinePath: $inMachine"; "InUserPath: $inUser";
+
+if (-not $inMachine) {
+  try {
+    $machinePath = [Environment]::GetEnvironmentVariable('Path','Machine')
+    if ([string]::IsNullOrWhiteSpace($machinePath)) { $machinePath = '' }
+    $newMachinePath = if ($machinePath.TrimEnd(';') -eq '') { $targetDir } else { $machinePath.TrimEnd(';') + ';' + $targetDir }
+    [Environment]::SetEnvironmentVariable('Path', $newMachinePath, 'Machine')
+    "✅ 已写入系统级 Path (Machine)."
+  } catch {
+    "⚠️ 写入系统级 Path 失败：$($_.Exception.Message)"
+    "   将改为写入用户级 Path (User) 作为替代。"
+    if (-not $inUser) {
+      $userPath = [Environment]::GetEnvironmentVariable('Path','User')
+      if ([string]::IsNullOrWhiteSpace($userPath)) { $userPath = '' }
+      $newUserPath = if ($userPath.TrimEnd(';') -eq '') { $targetDir } else { $userPath.TrimEnd(';') + ';' + $targetDir }
+      [Environment]::SetEnvironmentVariable('Path', $newUserPath, 'User')
+      "✅ 已写入用户级 Path (User)."
+    } else {
+      "ℹ️ 用户级 Path 已包含该目录，无需重复写入。"
+    }
+  }
+} else {
+  "ℹ️ 系统级 Path 已包含该目录，无需重复写入。"
+}
+
+# 让当前会话立即可用
+if (($env:Path -split ';') -notcontains $targetDir) { $env:Path = $env:Path.TrimEnd(';') + ';' + $targetDir }
+
+"--- 验证 ---";
+Get-Command claude -ErrorAction SilentlyContinue | Select-Object Name, Source, Version | Format-List;
+& claude --version 2>$null
+
+
+Path 写入已成功并且 `claude --version` 正常返回；我再做一次系统级 Path 复核，确认该目录确实已持久化写入且没有被写到错误的范围。
+
+Ran terminal command: $targetDir = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Links';
+$machinePath = [Environment]::GetEnvironmentVariable('Path','Machine');
+$hits = ($machinePath -split ';') | Where-Object { $_ -eq $targetDir };
+"MachinePathContains: $($hits.Count -ge 1) (count=$($hits.Count))";
+"UserPathContains: $((([Environment]::GetEnvironmentVariable('Path','User')) -split ';') -contains $targetDir)";
+"Resolved: $((Get-Command claude).Source)";
+
+已完成安装并把 Claude Code 配到系统环境变量 `Path` 里了。
+
+- 安装：通过 `winget` 确认 `Anthropic.ClaudeCode` 已安装（当前版本 `2.1.140`）。
+- 可执行文件位置：claude.exe
+- `Path` 配置：已将目录 Links 写入系统级 `Path (Machine)`（复核命中次数 `count=1`）。
+- 验证：当前终端可直接运行 `claude --version`，输出 `2.1.140 (Claude Code)`。
+
+如需在其它新开的终端/程序里生效，建议新开一个终端窗口（或重启 VS Code/PowerShell 会话）后再用 `claude --version` 验证一次。
+```
+
 **步骤 3**：装完后，重启ide，验证Claude code版本号，确认安装成功
 
-```Plain
+```cmd
 claude --version
 ```
 
-#### **macOS：**
+#### **macOS、Linux：**
 
 **步骤 1**：在ide终端先装Homebrew
 
-```Plain
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=YmY3ZDRkM2ZjY2JkODkzNzY2MGI1MWJhNDhjMTc5N2JfVWFsWnE0bWVBaUZvZWF4MnpJR3R4Y0wyekd2amtoSDdfVG9rZW46RWEzd2JTSGxVb2RkMUJ4bnFvWWNKbnhWbkxnXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
 **步骤 2**：向ide agent输入提示词：
 
-```Plain
+```bash
 帮我把homebrew加到PATH路径变量里面去
 ```
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NjUxODJiODBjMjBlMDFhNWQ4MDIzMGRmODQxZjU5NmRfdUNzN3RibHBUYldBcHVBSHBtSEFycFQzUlkxaGlLT0NfVG9rZW46R0dES2JHbVFGb1pJck14RFFDYmNzT1F6bkdlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
 **步骤 3**：在ide终端输入代码，安装Claude Code
 
-```Plain
+```bash
 brew install --cask claude-code@latest
 ```
 
 **步骤 4：**验证Claude code版本号，确认安装成功
 
-```Plain
+```bash
 claude --version
 ```
-
-  
 
 ## 3. 配置大模型
 
 1. 下载CC Switch做多模型切换和管理
-    
+   
     **CC Switch的GitHub仓库下载页：****https://github.com/farion1231/cc-switch/releases/tag/v3.14.1**
     
     **最新版本号：**v3.14.1
-    
 
-**步骤1：**在下载页，根据系统选择对应下载包：
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=Yjk3N2U5Mjk2NGIxZDE3MDQ1Y2VmZTY0OTZlMmJkYWJfaEo4U1RKT2ZMQVpSN3owdktmaFFRMnVMaUp0VG5KNFVfVG9rZW46V0xIUWJhSkRab3JSanR4M2Q5VmNSanYybnhkXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
+**步骤1：**在下载页，根据系统选择对应下载包![image-20260513140343410](C:\Users\Master\AppData\Roaming\Typora\typora-user-images\image-20260513140343410.png)
 
 **步骤2：**安装完成后，**务必在打开Claude Code之前**，优先设置CC Switch。在CC Switch的Claude Code页面添加API Key供应商：
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MTFkZjczNDIyNDUwODNhZGE3Yzk3NWU3NDc1YmE5N2VfUnQ4MkQwSE9UUWRsM0lXaHpqa1VuOTRYbVhMQndkYm5fVG9rZW46WjBxVmJoUlR6bzBSS3h4d00yaGNhenF3blZmXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
 **步骤3：**以 **Minimax** 为例，选择对应厂商（中国版），然后填写API Key和Base URL：
 
@@ -215,20 +272,20 @@ claude
 额外提醒：
 
 1. 如果希望CC能一路绿灯执行所有操作，需要输入指令`/exit` 退出重启后，在启动CC时输入以下命令
-    
+   
 
 ```Plain
 claude --dangerously-skip-permissions
 ```
 
 2. CC在Accept Edits模式下，执行终端命令时，下图三个选项的含义依次分别是：
-    
+   
     1. **仅同意这一次**的命令执行
-        
+       
     2. **同意**，且该项目之后执行项目依赖安装时，不再询问
-        
+       
     3. **不同意**，再商量
-        
+       
     
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjI2ZWU4ZTNkM2IwMzNiYTQ1OTcwZmI4ZWJkYTQ0Y2Rfam9kcnFLVUZSWXowUlQ5VDUxTlNLbWUydkJ3VDdSNXNfVG9rZW46QWwxU2Jxa3Q1b203cjl4VGE5VWNiN0hhbmFiXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
@@ -248,19 +305,19 @@ claude --dangerously-skip-permissions
 直接拖拽图片至对话框，或复制/粘贴：
 
 - **Windows：**`Alt + V`
-    
+  
 - **macOS：**`Command + V`
-    
+  
 
 ### **方式 3：多行文本输入**
 
 在CC文本框内换行的快捷键（**不是** Shift + Enter）：
 
 - **Windows：**`Ctrl + Enter`
-    
+  
 - **macOS：**`Option + Enter`
-    
-
+  
+  
   
 
 ## 6. 指令大全
@@ -304,7 +361,7 @@ claude --dangerously-skip-permissions
 **步骤1:**确认上下文进度
 
 - 输入`/context`命令，它会详细的展示我们的上下文占比信息：
-    
+  
     ```Plain
     /context
     ```
@@ -315,9 +372,9 @@ claude --dangerously-skip-permissions
 **步骤2:**主动压缩上下文
 
 - cc会在上下文即将满的时候，会帮我们自动压缩
-    
+  
 - 我的习惯是看到高于60%了，就大概率需要 `/compact`
-    
+  
 
 ```Plain
 /compact
@@ -332,7 +389,7 @@ claude --dangerously-skip-permissions
 **步骤4:**context占用条常驻
 
 - 对CC输入提示词，并根据CC引导完成后重启终端即可：
-    
+  
     ```Plain
     帮我配一个 statusLine,显示当前目录+模型+上下文剩余百分比 
     ```
@@ -343,7 +400,7 @@ claude --dangerously-skip-permissions
 **步骤5:**对话恢复
 
 - 输入以下指令后，选择恢复到你想要的会话即可：
-    
+  
     ```Plain
     /resume
     ```
@@ -380,7 +437,7 @@ claude --dangerously-skip-permissions
 ## 2. Auto Memory
 
 - 打开Auto Memory：输入`/memory` ，选择「**Auto-memory**」并输入回车开启
-    
+  
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=N2FlNDBjNWRjZGQ1NjJlMjc3ODQ3MzViYzkzMDNlZDJfMXJHOHlxWGNHd09lWlR4WVd3QmhXWHFjRmRxWEc5czlfVG9rZW46TG1sWGJCNGpLb2NnS3R4Zm84Q2NxNTJCblJmXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
     > 打开以后，我们与CC的工作交互过程中，那些没有显式的主动写进claude.md的一些习惯、错误、经验，都会以自动记忆形式被记录，但仅限于当前项目，不会跨项目产生影响。
@@ -391,9 +448,9 @@ claude --dangerously-skip-permissions
 ## 1. Skill 技能扩展
 
 1. **Claude Code优质skill推荐**
-    
+   
     1. 可以将skill链接给cc，让cc帮你直接下好
-        
+       
     
     |skill名称|功能|下载链接|
     |---|---|---|
@@ -403,20 +460,20 @@ claude --dangerously-skip-permissions
     |卡帕西skill|一个依据卡帕西经验总结，用于提升Claude Code编码表现的skill|[GitHub](https://github.com/forrestchang/andrej-karpathy-skills)|
     
 2. **skill合集网站：****[lobehub](https://lobehub.com/zh/skills)**
-    
+   
     1. 大家既可以根据分类去寻找自己需要的skill，也可以直接在精选合集查看推荐的优质skill
-        
+       
     
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MWU1YmNhMjNjMGNhZjM0ZjRlNzAyNDExZmNjMzdiOWZfbEt3MlByclU5RUJUM1pxNGdicG1kWHZhVWNtbVR6TTVfVG9rZW46T01wMmJZTGFub1I3WkJ4MWZiVmNYV01TbnI4XzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
 3. **想创建自己的skill？**
-    
+   
     1. 我们还有一份网页版教学文档，非常详细：[Agent Skills指南（Claude Code版）](https://ccnk05wgo092.aiforce.cloud/spark/faas/app_4jdqh6vm3jpdp)
-        
-4. **下载了skill怎么装？**
     
+4. **下载了skill怎么装？**
+   
     1. 可根据需求，将skill文件放入**项目级skill**与**全局级skill**的存放**文件夹**
-        
+       
     
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDE3Mjk1YjlkNzc2NjlkYjYyNzA4N2NlMzRjZDc0ZDdfMUI1ZmJOWGQwc1RxVG9hdUhJbGI5Q05ROTlmZDlGdG1fVG9rZW46T2U1TGJGWU12b0htTGl4dHJySGNhVUloblBlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
@@ -455,9 +512,9 @@ claude --dangerously-skip-permissions
 **创建子Agent的两种方式：**
 
 1. **自动触发：**任务复杂且存在并行可能时，CC会自动派生子Agent并行推进
-    
+   
 2. **手动创建：**通过指令 `/agents` ，在Library界面进行创建
-    
+   
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NGVjOGNkOGU3ZDVkNmE5NGMyMTI0YzAzNTI0NDY2OGZfaWtoN2ZMd1d6eFdpeGZob09MTjVYN2ttMlhUWTFxYWhfVG9rZW46SnF3RWJXeDFQbzZKQmR4d3d5UmNwbHExbjRlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
 
@@ -482,25 +539,25 @@ claude --dangerously-skip-permissions
 **步骤5：**选择Claude的模型
 
 - 一般选Sonnet就可以（如果使用CC Switch配置了模型，选哪个都一样）
-    
+  
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ODcyMTQ5YWEyMGNjODZmM2EyMmU3MTliNzcyNGRhYzJfMWl4VnZGU1ZRQnNSWVltUXBzOHBpbDRERk9CTkxzME1fVG9rZW46RWduY2IxeHZ1b0NNOGF4R1NwemNBbGtZbmJoXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
 
 **步骤6：**为子Agent挑选区别于主Agent的颜色
 
 - 选个好看的颜色
-    
+  
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MTczNTQyNTFmODEwNTZjNjE1MmQ4OGIwY2EzMGIzYmNfOUtMTDdXQ2drNVpOazRhRWlIdFlBSnFoWnNQUWJmbjRfVG9rZW46VlJTS2JtcFJpbzJwS2Z4Mnk2QWN3SHNHbk1iXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
 
 **步骤7:**调用与管理子Agent
 
 - 输入 `/agents`，在Library下选择已创建的项目级子Agent
-    
+  
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=M2E0ZWU0YWVkMjRjZjU2OGU1MGRlMDAxNWY5MDAwNTlfV1FqZnBwRFJ0Um5TM0FqUEhWNEptc05DV3dodjE4QnJfVG9rZW46T0dZYWI4WlNXbzQybUF4NEUycmMwQ1NmbndjXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
 - 根据需求对子Agent进行相应操作
-    
+  
     ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTJjY2ZjNGU1Mzk2MjJhN2NjNGJiNDgxNmJkYmY4YjRfbHRNVVcxaTFWdVNVN0RzR1hxbHJmRTNrT0c1M0JBczhfVG9rZW46VXA3TGJweUlVb01GMWd4cVNNSmMxMTRGbmhmXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
     
 
