@@ -391,6 +391,9 @@ claude --dangerously-skip-permissions
 **全局级 Claude.md** 有两种创建方式：
 
 - **方式 1：提示词交互：**xxx，写进全局claude.md
+
+  例如，`始终使用中文回复。所有对话、解释和代码注释都应使用中文。`
+
 - **方式 2：使用指令：**输入 `/memory` 后，选择「User Memory」进入
 
 ## 2. Auto Memory
