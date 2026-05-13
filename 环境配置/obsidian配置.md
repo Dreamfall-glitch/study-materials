@@ -20,7 +20,7 @@
 
 ## AI
 
-通过 `Claude code` 处理，详细见
+通过 `Claude Code` 处理，详细见 [Claude Code配置](Claude%20Code配置.md)
 
 ## 图像处理
 
