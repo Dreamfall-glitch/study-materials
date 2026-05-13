@@ -69,7 +69,7 @@ claude --version
 winget install Git.Git
 ```
 
-**步骤 2**：在ide agent输入以下提示词，让agent一条龙搞定Claude code安装
+**步骤 2**：在ide agent输入以下提示词，让agent一条龙搞定Claude code安装（使用VS Code 的 Github Copilot）
 
 ```
 执行这条代码安装Claude code：winget install Anthropic.ClaudeCode
@@ -224,16 +224,11 @@ claude --version
 
 **步骤1：**在下载页，根据系统选择对应下载包![image-20260513140343410](C:\Users\Master\AppData\Roaming\Typora\typora-user-images\image-20260513140343410.png)
 
-**步骤2：**安装完成后，**务必在打开Claude Code之前**，优先设置CC Switch。在CC Switch的Claude Code页面添加API Key供应商：
+**步骤2：**安装完成后，**务必在打开Claude Code之前**，优先设置CC Switch。在CC Switch的Claude Code页面添加API Key供应商：![](assets/Claude%20Code配置/file-20260513141130342.png)
 
 **步骤3：**以 **Minimax** 为例，选择对应厂商（中国版），然后填写API Key和Base URL：
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MzQyMDFiNzdhMjhiYmJhY2I4ZmU1MjJlYTlkZjM0MjlfQXVmcEpLQWY4bGd3cWFjeUNoODZYcXZtUmJxazdVdkhfVG9rZW46VDdkd2JRcFFub0xXcmp4a3FJZmN6a1FybjFkXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2VmZGJkMDYyMWQ2ZmY2NmFiZWI3MzAzOWVjZmNiMmFfUzdaVVpJOTZsMEdUNThScXJEc0VZRkt4TVRrcVpub1JfVG9rZW46VEZWUWJWbHNpb0JtUjJ4ZzdKbWN4MGh5bmhxXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
-> - 如果不知道Base URL，可以在API Key的官方文档里找到（以[Minimax的官方文档](https://platform.minimaxi.com/docs/guides/models-intro)为例）
->     
-> 
-> ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjExMDc3ZWQ4NWJhMmYyZmE0MjJjYzcyYmEzMWYxOGNfc1d1WTQySG41ZGtSR2VlMGRSQ280YnlLbk5XYnFZdmtfVG9rZW46QkN1UWJEalIxb2FSOWt4U1RBM2MxeEdSbmNiXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
 **步骤4：**选择「启用」设置好的API，CC的大模型配置完成！下一步可以准备打开Claude Code了：
 
