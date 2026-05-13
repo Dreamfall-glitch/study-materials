@@ -234,8 +234,6 @@ claude --version
 
 **步骤4：**选择「启用」设置好的API，CC的大模型配置完成！下一步可以准备打开Claude Code了：
 
-  
-
 ## 4. 基础实操
 
 **步骤1：**在IDE终端打开CC，输入：
@@ -244,17 +242,11 @@ claude --version
 claude
 ```
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NDI1NTRlNzkxYzQyNWUwOWQxY2NkYTE0M2M3YmM0MjdfbXJ2TGVoQmx6djB3b0lMQmZFdkY2dVFEbGFhTThJOWZfVG9rZW46SVFEcGI2ZU1Mb0I1aDd4RGdudGM3QzJNbkJnXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=OTI0ZWQ1MGFlYjhmZWI0ZDYxM2JmN2M3ZWQyMDA5YzlfYlFzUnIwcVhMSHpDbHVLdnhySW83YTk5QmNmSng5RG9fVG9rZW46RkhUV2JMdlVxb3pSaDd4d0dxemNrNExkbkFIXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
   
 
 **步骤2：**根据个人喜好设置皮肤与主题，然后一路 `yes` 后，进入CC主界面：
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmIyYTBlZGFiMGM5MTY2NzNlMzJjZmM2MzljMTM3NDZfeTdEbXhqVWdKTXVNYjlGbkFBN3hPdHVzaEZhZzlpUDVfVG9rZW46Q0Z1amIxbjl1b3RTb054UG84T2Myc0lObm9jXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
 **步骤3：**默认情况下，CC接到任务后会进入 **计划模式（Plan Mode）**：
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NjRkN2NjZWI1YzQ4YWY2ODg3M2RmNmRiMGFkYmQ1YTZfUTRYM2N4eXNvVktGNW5JaXN2cTJXVVowZUl5TXBJT3ZfVG9rZW46VVhFNWJDVmhFbzQ2WFZ4dWFQbmNVcnF2bk40XzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
 **步骤4：**使用shift+tab，可以让CC在计划模式、默认模式和Accept Edits模式之间来回切换
 
@@ -280,20 +272,13 @@ claude --dangerously-skip-permissions
     2. **同意**，且该项目之后执行项目依赖安装时，不再询问
        
     3. **不同意**，再商量
-       
     
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjI2ZWU4ZTNkM2IwMzNiYTQ1OTcwZmI4ZWJkYTQ0Y2Rfam9kcnFLVUZSWXowUlQ5VDUxTlNLbWUydkJ3VDdSNXNfVG9rZW46QWwxU2Jxa3Q1b203cjl4VGE5VWNiN0hhbmFiXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
-
-  
 
 ## 5. 如何提供文件给CC
 
 ### **方式 1：本地文件**
 
 使用 `@` 指令让CC进行本地文件信息查找：
-
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=YzRhNGE0NTA2YjBiZGViM2Q3YzYyOGI4MGU2OTFjZTlfWUtBWWtQNENsTXZIVkNSaXpramRoZFZ0OHNoREN2b1VfVG9rZW46WFRWT2JFc2llb3ZOUnN4aWt5U2NDVUF2bklnXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
 
 ### **方式 2：图片**
 
@@ -361,8 +346,6 @@ claude --dangerously-skip-permissions
     /context
     ```
     
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDRmOTIxODM4NDM1ZWI1YzgwZWUwZDQ0N2M1YWFmMzVfM3lYbjV1VkpYTGVSbXZqcXdxQ2xlQTdnUmlrYTNmTFpfVG9rZW46SlYwM2IycXBqb005R2J4cjFIaWMzRWpibmFlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
 
 **步骤2:**主动压缩上下文
 
@@ -389,8 +372,6 @@ claude --dangerously-skip-permissions
     帮我配一个 statusLine,显示当前目录+模型+上下文剩余百分比 
     ```
     
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=MDIzNWQ2MWEwMmRlY2U1ZTU4MDJjYTliOTc5ZmFmZWZfRzhjdGlzWmlwYkZ4NGpDYXZGU2dnZnl4TDRRdzVKak1fVG9rZW46RjFDMmJNbTVNb2hqaWF4dnJ2M2N3WktkbnVlXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
 
 **步骤5:**对话恢复
 
@@ -400,8 +381,6 @@ claude --dangerously-skip-permissions
     /resume
     ```
     
-
-  
 
 # 三、个性化
 
@@ -425,16 +404,10 @@ claude --dangerously-skip-permissions
 
 输入 `/memory` 后，选择「User Memory」进入：
 
-![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NWQ3YWM4MTRlMTliYmE1MDlkYTQ2M2RiY2I4NjUyMDBfcjVxZEVRQjl3M2lwY1FRMGdRMXFrRmY0dGV0aWI3dVJfVG9rZW46UEF0SmJOdGNybzhremN4YjhPRmNhQmlEblBkXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-
-  
-
 ## 2. Auto Memory
 
 - 打开Auto Memory：输入`/memory` ，选择「**Auto-memory**」并输入回车开启
   
-    ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=N2FlNDBjNWRjZGQ1NjJlMjc3ODQ3MzViYzkzMDNlZDJfMXJHOHlxWGNHd09lWlR4WVd3QmhXWHFjRmRxWEc5czlfVG9rZW46TG1sWGJCNGpLb2NnS3R4Zm84Q2NxNTJCblJmXzE3Nzg2NTAzNTk6MTc3ODY1Mzk1OV9WNA)
-    
     > 打开以后，我们与CC的工作交互过程中，那些没有显式的主动写进claude.md的一些习惯、错误、经验，都会以自动记忆形式被记录，但仅限于当前项目，不会跨项目产生影响。
     
 
