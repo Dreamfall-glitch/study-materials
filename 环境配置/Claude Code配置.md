@@ -216,11 +216,10 @@ claude --version
 
 ## 3. 配置大模型
 
-1. 下载CC Switch做多模型切换和管理
-   
-    **CC Switch的GitHub仓库下载页：**https://github.com/farion1231/cc-switch/releases/tag/v3.14.1
-    
-    **最新版本号：**v3.14.1
+- 下载CC Switch做多模型切换和管理
+  **CC Switch的GitHub仓库下载页：**https://github.com/farion1231/cc-switch/releases/tag/v3.14.1
+  **最新版本号：**v3.14.1
+  （建议设置`开机自启`）
 
 **步骤1：**在下载页，根据系统选择对应下载包![image-20260513140343410](C:\Users\Master\AppData\Roaming\Typora\typora-user-images\image-20260513140343410.png)
 
