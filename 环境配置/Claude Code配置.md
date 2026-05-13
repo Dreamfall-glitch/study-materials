@@ -312,7 +312,7 @@ claude --dangerously-skip-permissions
 |`/clear`|彻底清空上下文，相当于重开一个会话|
 |`/context`|**详细展示agent当前的上下文信息，诸如：上下文占比，上下文类别等等**|
 |`/resume`|**在全新的上下文窗口，选择恢复到之前的对话**|
-|`/init`|初始化创建项目级Claude.md|
+|`/init`|**初始化创建项目级Claude.md**|
 |`/memory`|针对Claude的全局、项目记忆，以及auto memory进行操作和管理|
 |`/agents`|创建、调用、管理子agent|
 |`/plugin`|发现新插件，管理已下载插件，新增插件生态|
@@ -366,22 +366,25 @@ claude --dangerously-skip-permissions
     /resume
     ```
     
-
-- 恢复上次对话
-
-  ```powershell
-  claude -c
-  ```
-
-  -c 即 -continue
+    - 恢复上次对话
+    
+      ```powershell
+      claude -c
+      ```
+    
+      -c 即 -continue
 
 # 三、个性化
 
 ## 1. Claude.md 配置
 
+*Claude.md分为两种*
+
 **项目级 Claude.md** 创建方式：
 
-```Plain
+> 等项目有一定雏形了再创建
+
+```powershell
 /init
 ```
 
