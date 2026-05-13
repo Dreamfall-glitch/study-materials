@@ -6,12 +6,13 @@
 
 推荐使用以下免费IDE，无需购买会员，使用免费额度即可完成后续CC部署：
 
-|**Agent IDE**|**下载地址**|
-|---|---|
-|Cursor|[官网下载](https://cursor.com/cn/download)|
-|Google Anti-gravity|[官网下载](https://antigravity.google/download)|
-|Trae|[官网下载（cn）](https://www.trae.cn/)|
-|[官网下载（en）](https://www.trae.ai/)|
+| **Agent IDE**                    | **下载地址**                                    |
+| -------------------------------- | ------------------------------------------- |
+| Cursor                           | [官网下载](https://cursor.com/cn/download)      |
+| Google Anti-gravity              | [官网下载](https://antigravity.google/download) |
+| Trae                             | [官网下载（cn）](https://www.trae.cn/)            |
+| [官网下载（en）](https://www.trae.ai/) |                                             |
+
 
 以 **Cursor** 为例，下载进入后，可以构建如图的开发环境布局：
 
