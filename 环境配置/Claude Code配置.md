@@ -329,8 +329,6 @@ claude --dangerously-skip-permissions
 帮我下载Git，并与我的GitHub账号绑定
 ```
 
-  
-
 ## 2.上下文管理
 
 **步骤1:**确认上下文进度
@@ -389,15 +387,8 @@ claude --dangerously-skip-permissions
 
 **全局级 Claude.md** 有两种创建方式：
 
-**方式 1：提示词交互**
-
-```Plain
-记得永远说中文，写进全局claude.md
-```
-
-**方式 2：使用指令**
-
-输入 `/memory` 后，选择「User Memory」进入：
+- **方式 1：提示词交互：**记得永远说中文，写进全局claude.md
+- **方式 2：使用指令：**输入 `/memory` 后，选择「User Memory」进入
 
 ## 2. Auto Memory
 
@@ -405,6 +396,10 @@ claude --dangerously-skip-permissions
   
     > 打开以后，我们与CC的工作交互过程中，那些没有显式的主动写进claude.md的一些习惯、错误、经验，都会以自动记忆形式被记录，但仅限于当前项目，不会跨项目产生影响。
     
+
+## 3. 如何写提示词
+
+参考
 
 # 四、能力扩展
 
