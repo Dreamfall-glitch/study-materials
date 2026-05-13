@@ -431,8 +431,16 @@ claude --dangerously-skip-permissions
 4. **下载了skill怎么装？**
    
     可根据需求，将skill文件放入**项目级skill**与**全局级skill**的存放**文件夹**
-
-  
+    
+    skill文件结构
+    
+    ```
+    xxx-skill/
+    ├── SKILL.md 
+    ├── scripts/
+    ├── references/
+    └── assets/
+    ```
 
 ## 2. MCP 扩展
 
