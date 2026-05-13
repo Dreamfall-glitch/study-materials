@@ -438,11 +438,7 @@ claude --dangerously-skip-permissions
 
 关于MCP的部分，可结合以下教程进行学习与实践：
 
-**学习资源**
 
-📺 **视频教程：**[用神器Claude Code！打造贴身AI秘书团【小白教程】](https://www.bilibili.com/video/BV1zqeMzfEiQ/?spm_id_from=333.1387.upload.video_card.click&vd_source=b82dea39967bb9f5eb44be501b4cae31)
-
-📄 **文档教程：**[Claude Code教程](https://my.feishu.cn/wiki/BxLTwlkvkiQhJkkJ7vgc95aZnMe)
 
 ## 3. CLI 命令行工具
 
