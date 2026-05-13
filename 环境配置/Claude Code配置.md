@@ -438,7 +438,11 @@ claude --dangerously-skip-permissions
 
 关于MCP的部分，可结合以下教程进行学习与实践：
 
+- MCP（模型上下文协议）是Anthropic推出的开源标准，相当于AI界的“万能插头”，解决大模型连接外部数据源和工具时需定制代码的问题。它与Skill的区别在于：MCP是“基础设施层”，负责连接外部系统（解决“能不能连”）；Skill是“流程层”，封装专业知识（解决“怎么做得好”），两者互补。
 
+- 在Claude Code中接入MCP：启动`claude .`后，输入`/mcp`命令，通过菜单授权即可添加本地或远程MCP服务器。CLI是“执行层”，MCP是“能力层”，两者可协同。
+
+- 常见MCP工具：`mcp-image-gen`（生成/编辑图片）、`youtube-uploader-mcp`（上传视频）、`@magun/watch`（终端播放YouTube）。
 
 ## 3. CLI 命令行工具
 
