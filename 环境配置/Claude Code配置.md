@@ -218,7 +218,7 @@ claude --version
 
 1. 下载CC Switch做多模型切换和管理
    
-    **CC Switch的GitHub仓库下载页：****https://github.com/farion1231/cc-switch/releases/tag/v3.14.1**
+    **CC Switch的GitHub仓库下载页：**https://github.com/farion1231/cc-switch/releases/tag/v3.14.1
     
     **最新版本号：**v3.14.1
 
