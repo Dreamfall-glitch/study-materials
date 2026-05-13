@@ -32,10 +32,15 @@
 
 ## 手机同步
 1. 把电脑上的整个仓库文件夹复制到手机 `Document` 目录下（路径通常是 `内部存储/Documents/你的仓库名`）。
+
 2. 手机安装 `Obsidian`，选择“打开文件夹作为仓库”，指向刚才粘贴的目录。
+
 3. 安装 ` Git` 插件，进入设置：
-   - 同样填写远程仓库地址、分支（一般默认 `main`）
-   - 根据网络情况勾选 `Pull on startup`（打开时自动拉取）
-   - 勾选 `Push on backup` 或设置定时备份推送
-   - 如有需要，设置 Git 用户名与邮箱（可在插件设置或通过 `.gitconfig`）
-   - 建议使用 Personal Access Token 进行身份验证，避免频繁输入密码
+
+   仅需设置以下内容
+   ![300](assets/obsidian配置/file-20260513131200875.jpg)
+   其中，
+   - 第1,3,4项，填写个人github账号
+   - 第2项，需打开![](assets/obsidian配置/file-20260513131441443.png)
+   设置![](assets/obsidian配置/file-20260513131548099.png)
+   
