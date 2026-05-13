@@ -313,7 +313,7 @@ claude --dangerously-skip-permissions
 |`/context`|**详细展示agent当前的上下文信息，诸如：上下文占比，上下文类别等等**|
 |`/resume`|**在全新的上下文窗口，选择恢复到之前的对话**|
 |`/init`|**初始化创建项目级Claude.md**|
-|`/memory`|针对Claude的全局、项目记忆，以及auto memory进行操作和管理|
+|`/memory`|**针对Claude的全局、项目记忆，以及auto memory进行操作和管理**|
 |`/agents`|创建、调用、管理子agent|
 |`/plugin`|发现新插件，管理已下载插件，新增插件生态|
 
