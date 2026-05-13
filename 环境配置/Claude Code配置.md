@@ -226,7 +226,7 @@ claude --version
 
 **步骤2：**安装完成后，**务必在打开Claude Code之前**，优先设置CC Switch。在CC Switch的Claude Code页面添加API Key供应商：![](assets/Claude%20Code配置/file-20260513141130342.png)
 
-**步骤3：**以 **Minimax** 为例，选择对应厂商（中国版），然后填写API Key和Base URL：
+**步骤3：**以 **DeepSeek** 为例，选择对应厂商（中国版），然后填写API Key和Base URL：
 
 
 
