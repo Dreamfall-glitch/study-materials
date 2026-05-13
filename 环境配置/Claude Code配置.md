@@ -243,6 +243,7 @@ claude
 ```
 
 **步骤2：**根据个人喜好设置皮肤与主题，然后一路 `yes` 后，进入CC主界面：
+![](assets/Claude%20Code配置/file-20260513151843295.png)
 
 **步骤3：**默认情况下，CC接到任务后会进入 **计划模式（Plan Mode）**：
 
@@ -257,9 +258,8 @@ claude
 额外提醒：
 
 1. 如果希望CC能一路绿灯执行所有操作，需要输入指令`/exit` 退出重启后，在启动CC时输入以下命令
-   
 
-```Plain
+```powershell
 claude --dangerously-skip-permissions
 ```
 
@@ -294,9 +294,6 @@ claude --dangerously-skip-permissions
 - **Windows：**`Ctrl + Enter`
   
 - **macOS：**`Option + Enter`
-  
-  
-  
 
 ## 6. 指令大全
 
