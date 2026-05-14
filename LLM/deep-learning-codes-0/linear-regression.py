@@ -18,7 +18,7 @@ def cost(xs, ys):
     # zip(xs, ys) 的作用是将两个列表中的对应元素打包成元组
     for x, y in zip(xs, ys):
         f_x = forward(x)    # 预测f(x)
-        cost_value += (f_x - y) ** 2    # 均方根
+        cost_value += (f_x - y) ** 2
         return cost_value / len(xs) # 求平均
 
 # 定义梯度函数
