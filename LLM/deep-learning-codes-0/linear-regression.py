@@ -5,7 +5,7 @@ x_data = [1, 2, 3]
 # 定义数据标签
 y_data = [2, 4, 6]
 
-# 初始化参数槽
+# 初始化参数槽，可定制
 w = 4
 
 # 定义线性回归模型
@@ -33,6 +33,8 @@ def gradient(xs, ys):
 for epoch in range(100):
     cost_val = cost(x_data, y_data)
     grad_val = gradient(x_data, y_data)
-    alpha = 0.01
-    w = w - alpha * grad_val
-    print('训练轮次：',epoch+1, 'w(权重值)：',w,'损失函数：',cost_val)
+    alpha = 0.01    # 步伐
+    w = w - alpha * grad_val    # 梯度下降
+    # print('训练轮次：',epoch+1, 'w(权重值)：',w,'损失函数：',cost_val)
+
+print('100轮训练后的w: ',w,'预测下一个特征（4）的标签值（8）：',forward(4))
