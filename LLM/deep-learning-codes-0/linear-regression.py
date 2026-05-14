@@ -25,4 +25,8 @@ def cost(xs, ys):
 def gradient(xs, ys):
     grad = 0
     for x, y in zip(xs, ys):
+        # partial J(w)/ partial w = 2x(wx-y)
         grad += 2 * x * (x * w - y)
+        return grad / len(xs)
+
+for epoch in range(100):
