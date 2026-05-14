@@ -29,4 +29,10 @@ def gradient(xs, ys):
         grad += 2 * x * (x * w - y)
         return grad / len(xs)
 
+#模型训练，epoch（周期/代次）是指在训练神经网络时，整个训练数据集被完整地向前传播和反向传播一次。
 for epoch in range(100):
+    cost_val = cost(x_data, y_data)
+    grad_val = gradient(x_data, y_data)
+    alpha = 0.01
+    w = w - alpha * grad_val
+    print('训练轮次：',epoch+1, 'w(权重值)：',w,'损失函数：',cost_val)
