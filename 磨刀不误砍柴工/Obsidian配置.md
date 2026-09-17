@@ -16,6 +16,7 @@
    .obsidian/workspace.json
    .obsidian/workspace-mobile.json
    ```
+   
 3. 安装 `Git` 插件，设置![](assets/Obsidian配置/file-20260513125228994.png)![](assets/Obsidian配置/file-20260513125259861.png)
 
 ## AI
