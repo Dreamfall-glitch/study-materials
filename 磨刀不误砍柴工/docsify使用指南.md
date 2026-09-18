@@ -149,3 +149,14 @@ Docsify 会优先使用当前目录的 `_sidebar.md`，没有就向父级目录�
 - [Guide](guide.md 'The greatest guide in the world')
 ```
 
+### 自动生成目录(Markdown 里的标题会自动变成侧边栏目录)
+
+```HTML
+<script>
+  window.$docsify = {
+    loadSidebar: true,
+    subMaxLevel: 2,
+    <!-- 表示最多把二级标题加入目录 -->
+  };
+</script>
+```
