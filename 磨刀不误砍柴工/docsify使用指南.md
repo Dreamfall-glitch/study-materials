@@ -89,3 +89,20 @@ cd docs && python -m http.server 3000
   - [Page 1](page-1.md)
 ```
 
+#### .nojekyll
+
+GitHub Pages 默认会用 **Jekyll** 来生成网站. 而Jekyll 有一个规则：忽略所有以下划线 `_` 开头的文件或文件夹.
+
+所以建立此文件(留空即可)
+
+#### 查找
+
+Docsify 加载侧边栏时，会按这个顺序找：
+
+1. **先看当前页面所在的文件夹里有没有 `_sidebar.md`**。  
+    有的话，就用这个文件夹里的侧边栏。
+    
+2. 如果当前文件夹没有，它会向上一级目录找；再没有就继续往上，直到根目录。
+    
+3. 如果一直找到根目录都没有，或者你配置了 `loadSidebar` 指定了某个文件，那就用你在 `index.html` 里配置的那个侧边栏文件。  
+    通常 `loadSidebar: true` 时，默认就是根目录的 `docs/_sidebar.md`
