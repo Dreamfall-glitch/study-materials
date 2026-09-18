@@ -81,18 +81,11 @@ cd docs && python -m http.server 3000
 ### \_sidebar.md
 
 ```Markdown
-<!-- markdownlint-disable first-line-h1 -->
+<!-- docs/_sidebar.md -->
 
-- Getting started
+- Section Header 1
 
-  - [Quick start](quickstart.md)
-  - [Adding pages](adding-pages.md)
-  - [Cover page](cover.md)
-  - [Custom navbar](custom-navbar.md)
-
-...
-
-* [Awesome docsify](awesome.md)
-* [Changelog](changelog.md)
+  - [Home](/)
+  - [Page 1](page-1.md)
 ```
 
