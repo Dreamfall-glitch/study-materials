@@ -4,6 +4,23 @@
 
 # 配环境
 
+## 安装`docsify-cli`
+
 ```bash
 npm i docsify-cli -g
 ```
+
+## 初始化
+
+```bash
+docsify init ./docs
+```
+
+然后打开
+
+```bash
+docsify serve docs
+```
+
+地址为 `http://localhost:3000`
+
