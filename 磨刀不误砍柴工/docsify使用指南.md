@@ -54,3 +54,15 @@ docsify serve docs
   </body>
 </html>
 ```
+
+## 使用python查看
+
+```python
+# Python 2
+cd docs && python -m SimpleHTTPServer 3000
+```
+
+```python
+# Python 3
+cd docs && python -m http.server 3000
+```
