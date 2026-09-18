@@ -138,3 +138,14 @@ Docsify 会优先使用当前目录的 `_sidebar.md`，没有就向父级目录�
 </script>
 ```
 
+在子目录中创建一个 README.md 文件，并将其用作该路由的着陆页
+
+### 添加页标题
+
+```Markdown
+<!-- docs/_sidebar.md -->
+
+- [Home](/)
+- [Guide](guide.md 'The greatest guide in the world')
+```
+
