@@ -76,3 +76,23 @@ cd docs && python -m http.server 3000
 在 `docs` 目录下直接新建 `.md` 文件就行. 比如新建 `guide.md`，访问地址就是：
 `http://localhost:3000/#/guide`
 
+## 侧边栏
+
+### \_sidebar.md
+
+```Markdown
+<!-- markdownlint-disable first-line-h1 -->
+
+- Getting started
+
+  - [Quick start](quickstart.md)
+  - [Adding pages](adding-pages.md)
+  - [Cover page](cover.md)
+  - [Custom navbar](custom-navbar.md)
+
+...
+
+* [Awesome docsify](awesome.md)
+* [Changelog](changelog.md)
+```
+
