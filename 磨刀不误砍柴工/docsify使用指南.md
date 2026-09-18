@@ -2,3 +2,8 @@
 
 [官网手册](https://docsify.js.org/#/)
 
+# 配环境
+
+```bash
+npm i docsify-cli -g
+```
