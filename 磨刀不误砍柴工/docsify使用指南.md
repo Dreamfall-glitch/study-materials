@@ -71,3 +71,8 @@ cd docs && python -m http.server 3000
 
 # 加页
 
+## 添加md文件
+
+在 `docs` 目录下直接新建 `.md` 文件就行. 比如新建 `guide.md`，访问地址就是：
+`http://localhost:3000/#/guide`
+
