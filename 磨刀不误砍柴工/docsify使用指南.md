@@ -107,3 +107,17 @@ Docsify 加载侧边栏时，会按这个顺序找：
 3. 如果一直找到根目录都没有，或者你配置了 `loadSidebar` 指定了某个文件，那就用你在 `index.html` 里配置的那个侧边栏文件。  
     通常 `loadSidebar: true` 时，默认就是根目录的 `docs/_sidebar.md`
 
+### 启用
+
+```HTML
+<!-- index.html -->
+
+<script>
+  window.$docsify = {
+    loadSidebar: true,
+  };
+</script>
+```
+
+### 嵌套
+
