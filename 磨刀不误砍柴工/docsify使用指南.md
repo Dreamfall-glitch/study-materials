@@ -167,5 +167,33 @@ add `<!-- {docsify-ignore} -->` to it, 如
 
 `## Header <!-- {docsify-ignore} -->`
 
+---
+
 # 封面Cover
 
+## 基本设置
+
+Set `coverpage` to **true**, and create a `_coverpage.md`:
+
+```js
+window.$docsify = {
+  coverpage: true,
+};
+```
+
+```markdown
+<!-- _coverpage.md -->
+
+![logo](_media/icon.svg)
+
+# docsify
+
+> A magical documentation site generator
+
+- Simple and lightweight
+- No statically built HTML files
+- Multiple themes
+
+[GitHub](https://github.com/docsifyjs/docsify/)
+[Get Started](#docsify)
+```
