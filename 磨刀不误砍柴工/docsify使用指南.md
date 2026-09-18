@@ -160,3 +160,12 @@ Docsify 会优先使用当前目录的 `_sidebar.md`，没有就向父级目录�
   };
 </script>
 ```
+
+#### 忽略某个
+
+add `<!-- {docsify-ignore} -->` to it, 如
+
+`## Header <!-- {docsify-ignore} -->`
+
+# 封面Cover
+
