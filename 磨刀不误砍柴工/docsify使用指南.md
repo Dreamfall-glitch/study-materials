@@ -121,3 +121,20 @@ Docsify 加载侧边栏时，会按这个顺序找：
 
 ### 嵌套
 
+在每个子文件夹里放一个 `_sidebar.md`
+
+Docsify 会优先使用当前目录的 `_sidebar.md`，没有就向父级目录找
+
+如果不想找:
+
+```HTML
+<script>
+  window.$docsify = {
+    loadSidebar: true,
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+  };
+</script>
+```
+
