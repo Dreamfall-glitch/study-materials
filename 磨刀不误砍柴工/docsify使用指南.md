@@ -55,7 +55,7 @@ docsify serve docs
 </html>
 ```
 
-## 使用python查看
+## 使用python启动
 
 ```python
 # Python 2
