@@ -336,3 +336,6 @@ window.$docsify = {
   - [Markdown configuration](markdown.md)
   - [Language highlight](language-highlight.md)
 ```
+
+---
+
