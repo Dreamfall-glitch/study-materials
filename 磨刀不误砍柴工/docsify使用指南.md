@@ -200,7 +200,23 @@ window.$docsify = {
 
 ## 属性设置
 
+### `index.html`添加
 
+`<head>` 里加一段 `<style>`
+
+```HTML
+<style>
+:root {
+  --cover-bg         : url('path/to/image.png');
+  --cover-bg-overlay : rgba(0, 0, 0, 0.5);
+  --cover-color      : #fff;
+  --cover-title-color: var(--theme-color);
+  --cover-title-font : 600 var(--font-size-xxxl) var(--font-family);
+}
+</style>
+```
+
+### `_coverpage.md`添加
 
 ```markdown
 <!-- background color -->
@@ -213,3 +229,4 @@ window.$docsify = {
 
 ![](_media/bg.png)
 ```
+
