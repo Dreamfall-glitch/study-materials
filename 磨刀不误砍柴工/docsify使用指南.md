@@ -264,3 +264,52 @@ window.$docsify = {
 ---
 
 # 导航栏
+
+## HTML
+
+通过 `#/` 链接导航
+
+```html
+<!-- index.html -->
+
+<body>
+  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">简体中文</a>
+  </nav>
+  <div id="app"></div>
+</body>
+```
+
+## Markdown
+
+通过开启`loadNavbar`, 在`_navbar.md`编写
+
+```html
+<!-- index.html -->
+
+<script>
+  window.$docsify = {
+    loadNavbar: true,
+  };
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
+```
+
+```markdown
+<!-- _navbar.md -->
+
+- [En](/)
+- [chinese](/zh-cn/)
+```
+
+下拉菜单:
+
+```markdown
+<!-- _navbar.md -->
+
+- Translations
+  
+	- [En](/)
+	- [chinese](/zh-cn/)
+```
