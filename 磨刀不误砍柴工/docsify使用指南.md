@@ -318,7 +318,7 @@ window.$docsify = {
 
 ### 嵌套菜单
 
-```Markdown
+```markdown
 <!-- _navbar.md -->
 
 - Getting started
