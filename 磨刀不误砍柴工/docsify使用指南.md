@@ -218,9 +218,49 @@ window.$docsify = {
 
 把封面页当作整个网站的入口，用户必须点击封面上的链接（比如某个外部链接或 `#/xxx` 路由）才能去其他页面
 
-```HTML
+```js
 window.$docsify = { 
 	onlyCover: false,
 };
 ```
 
+## 多语言不同封面
+
+If your docs site is in more than one language, it may be useful to set multiple covers.
+
+For example, your docs structure is like this
+
+```text
+.
+└── docs
+    ├── README.md
+    ├── guide.md
+    ├── _coverpage.md
+    └── zh-cn
+        ├── README.md
+        └── guide.md
+        └── _coverpage.md
+```
+
+Now, you can set
+
+```js
+window.$docsify = {
+  coverpage: ['/', '/zh-cn/'],
+};
+```
+
+Or a special file name
+
+```js
+window.$docsify = {
+  coverpage: {
+    '/': 'cover.md',
+    '/zh-cn/': 'cover.md',
+  },
+};
+```
+
+---
+
+# 导航栏
