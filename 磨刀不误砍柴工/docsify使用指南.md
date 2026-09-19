@@ -205,6 +205,9 @@ window.$docsify = {
 `<head>` 里加一段 `<style>`
 
 ```HTML
+    <!-- Core Theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@5/dist/themes/core.min.css">
+
 <style>
 :root {
   --cover-bg         : url('path/to/image.png');
