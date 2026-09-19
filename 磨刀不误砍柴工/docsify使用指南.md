@@ -314,6 +314,6 @@ window.$docsify = {
 	- [chinese](/zh-cn/)
 ```
 
-> 每个文件夹的`_navbar.md`为该界面的下拉菜单
+> 每个文件夹的`_navbar.md`为该界面的导航栏
 
 
