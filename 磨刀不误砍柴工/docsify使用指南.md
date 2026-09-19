@@ -198,7 +198,7 @@ window.$docsify = {
 [Get Started](#docsify)
 ```
 
-## 属性设置
+## 背景
 
 ### `_coverpage.md`添加
 
@@ -212,5 +212,15 @@ window.$docsify = {
 <!-- background image -->
 
 ![](_media/bg.png)
+```
+
+## 独立封面页
+
+把封面页当作整个网站的入口，用户必须点击封面上的链接（比如某个外部链接或 `#/xxx` 路由）才能去其他页面
+
+```HTML
+window.$docsify = { 
+	onlyCover: false,
+};
 ```
 
