@@ -197,3 +197,19 @@ window.$docsify = {
 [GitHub](https://github.com/docsifyjs/docsify/)
 [Get Started](#docsify)
 ```
+
+## 属性设置
+
+
+
+```markdown
+<!-- background color -->
+
+![color](#f0f0f0)
+```
+
+```markdown
+<!-- background image -->
+
+![](_media/bg.png)
+```
