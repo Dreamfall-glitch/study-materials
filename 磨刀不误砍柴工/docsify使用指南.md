@@ -341,29 +341,27 @@ window.$docsify = {
 
 # 上传云端
 
-因为你的网站是用 Docsify 做的，所有文件都在本地 `docs` 文件夹里，流程会比从零开始建站更简单。
+## 把本地文件推送到 GitHub
 
-### 第一步：把本地文件推送到 GitHub
+先在 GitHub 上创建一个仓库，然后把本地的 `docs` 文件夹传上去。
 
-你需要先在 GitHub 上创建一个仓库，然后把本地的 `docs` 文件夹传上去。
+1. **创建仓库**：登录 GitHub，点击右上角 `+` → `New repository`。仓库名可以叫 `xxx-wiki`，选 **Public**（免费版 Pages 需要公开仓库），不要勾选 `Add a README file`，直接创建。
 
-1. **创建仓库**：登录 GitHub，点击右上角 `+` → `New repository`。仓库名可以叫 `baoyan-wiki`，选 **Public**（免费版 Pages 需要公开仓库），不要勾选 `Add a README file`，直接创建。
-
-2. **推送文件**：在本地 `docs` 文件夹的**上级目录**打开 PowerShell，依次运行（把“你的用户名”和“仓库名”替换掉）：
+2. **推送文件**：在本地 `docs` 文件夹的**上级目录**打开 PowerShell/Bash，依次运行（把“你的用户名”和“仓库名”替换掉）：
    ```bash
    # 初始化本地仓库
    git init
    # 添加所有文件到暂存区
    git add .
    # 提交更改（信息自己写）
-   git commit -m "首次上传保研Wiki"
+   git commit --allow-empty -am "initial"
    # 关联远程仓库
    git remote add origin https://github.com/你的用户名/仓库名.git
    # 推送到 main 分支
    git push -u origin main
    ```
 
-### 第二步：开启 GitHub Pages 服务
+## 开启 GitHub Pages 服务
 
 文件上传后，开启 Pages 就能获得公开网址。
 
@@ -373,13 +371,11 @@ window.$docsify = {
 4. 在 **Branch** 下，选择 `main` 分支，文件夹选择 `/ (root)`（因为你的 Docsify 文件都在仓库根目录），然后点击 **Save**。
 5. 等待 1-2 分钟，刷新页面，就能看到你的网站地址了，格式为 `https://你的用户名.github.io/仓库名/`。
 
-### 第三步：验证与访问
+## 验证与访问
 
-在浏览器打开上面那个 `github.io` 的网址，应该就能看到你的 Docsify 首页了。把这个网址分享给学弟学妹，他们用手机、平板或电脑，随时随地都能打开。
+在浏览器打开上面那个 `github.io` 的网址，就能看到你的 Docsify 首页了.
 
-### 后续维护
+## 后续维护
 
-以后你在本地修改了 `.md` 文件，只需要在 `docs` 的上级目录再次运行 `git add .`、`git commit -m "更新内容"`、`git push`，GitHub Pages 就会**自动重新部署**，网站内容也就更新了，不需要再操作一遍 Settings。
-
-**一个关键提醒**：GitHub Free 的 Pages 只支持**公开仓库**，这意味着你之前整理的资料，在推送之前**必须完成脱敏**。一旦推上去，历史记录里就删不干净了，所以最好先把“绝不公开”的文件（证件、成绩单、他人简历等）移出 `docs` 文件夹，确认剩下的都是可以公开的，再执行 `git push`。
+以后你在本地修改了 `.md` 文件，只需要在 `docs` 的上级目录再次运行 `git add .`、`git commit -m "更新内容"`、`git push`，GitHub Pages 就会**自动重新部署**，网站内容也就更新了，不需要再操作一遍 Settings
 
