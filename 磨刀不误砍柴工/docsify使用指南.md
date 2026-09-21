@@ -369,7 +369,7 @@ window.$docsify = {
 1. 进入你刚刚创建的仓库页面。
 2. 点击 **Settings** → 左侧找到 **Pages**。
 3. 在 “Build and deployment” 下的 **Source** 选择 `Deploy from a branch`。
-4. 在 **Branch** 下，选择 `main` 分支，文件夹选择 `/ (root)`（因为你的 Docsify 文件都在仓库根目录），然后点击 **Save**。
+4. 在 **Branch** 下，选择 `main` 分支，文件夹选择 `/docs`（因为Docsify 文件都在仓库`docs`目录），然后点击 **Save**。
 5. 等待 1-2 分钟，刷新页面，就能看到你的网站地址了，格式为 `https://你的用户名.github.io/仓库名/`。
 
 ## 验证与访问
