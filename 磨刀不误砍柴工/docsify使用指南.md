@@ -348,6 +348,7 @@ window.$docsify = {
 1. **创建仓库**：登录 GitHub，点击右上角 `+` → `New repository`。仓库名可以叫 `xxx-wiki`，选 **Public**（免费版 Pages 需要公开仓库），不要勾选 `Add a README file`，直接创建。
 
 2. **推送文件**：在本地 `docs` 文件夹的**上级目录**打开 PowerShell/Bash，依次运行（把“你的用户名”和“仓库名”替换掉）：
+
    ```bash
    # 初始化本地仓库
    git init
